@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>People Data</title>
+    </head>
+    <body>
+        <script>
+            async function getPeopleData() {
+                response =  await fetch('localhost:3000/', {
+                    method: "POST"
+                })
+                jsonData = await response.json()
+                console.log(jsonData)
+            }
+            getPeopleData()
+        </script>
+    </body>
+</html>
